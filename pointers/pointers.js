@@ -1,4 +1,7 @@
-/* Default cursor */
+var styleElement = document.createElement('style');
+styleElement.type = 'text/css';
+styleElement.innerHTML = `
+  /* Default cursor */
 body, * {
     cursor: url('handpointing.svg'), auto;
   }
@@ -17,3 +20,7 @@ body, * {
   [title], .help-icon {
     cursor: url('help.svg'), help;
   }
+
+`;
+document.head.appendChild(styleElement);
+
