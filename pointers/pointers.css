@@ -1,0 +1,24 @@
+/* Default cursor */
+body, * {
+    cursor: url('pointers/handpointing.svg'), auto;
+  }
+  
+  /* Clickable elements */
+  a, button, [role="button"], input[type="submit"], input[type="button"] {
+    cursor: url('pointers/handpointing.svg'), pointer;
+  }
+  
+  /* Text input areas */
+  input[type="text"], textarea, [contenteditable="true"] {
+    cursor: url('pointers/textcursor.svg'), text;
+  }
+  
+  /* Elements with title attribute or help icons */
+  [title], .help-icon {
+    cursor: url('pointers/help.svg'), help;
+  }
+
+.blue {
+  background-color: #008cff;
+  color: white;
+}
